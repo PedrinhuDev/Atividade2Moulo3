@@ -1,0 +1,184 @@
+@keyframes movimento {
+    0% {opacity:0;}
+    28% {opacity:0;}
+    33% {opacity:1;}
+    94% {opacity:1;}    
+}
+
+body{
+    background-color: #326454;
+
+    /* border: solid 1px #ffffff; */
+}
+
+.pagina1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+    gap: 50px;
+}
+
+.imagePagina1{
+    border: solid 1px #e59848;
+}
+
+.imgLog{    
+    animation-name: movimento;
+    animation-duration: 3s;
+}
+
+.oculto{
+    display: none;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px);
+
+    width: 300px;
+
+    
+}
+
+.linha-input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #e59848;  
+}
+
+input{
+    background-color: #224d3f;
+    color: #e59848;
+
+    border-color: #e59848;
+
+    font-family: "Nunito", sans-serif;
+}
+
+.iptFoto{
+    background-color: #326454;
+    color: #e59848;
+
+    border-color: #e59848;
+
+    font-family: "Nunito", sans-serif;
+}
+
+input::file-selector-button{
+    background-color: #224d3f;
+    color: #e59848;
+
+    border-color: #e59848;
+
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    font-family: "Nunito", sans-serif;
+}
+
+button{
+    background-color: #e59848;
+    color: #326454;
+
+    border-color: #e59848;
+
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    font-family: "Playwrite PL", cursive;
+    font-size: 15px;
+    /* font-weight: 400; */
+}
+
+.pagina2{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+    gap: 50px;
+    padding: 24px;
+    padding-top: 40px;
+}
+
+.nomeUsuario{
+    color: #e59848;
+    
+
+    font-family:"Playwrite PL", cursive;
+    font-size: 20px;
+
+
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+    
+   
+    /* margin-bottom: 100px; */
+    gap: calc(50px);
+
+    width: 300px;
+
+    
+}
+
+.c1{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    align-self: flex-start;
+
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.card{
+    background-color:#224d3f;
+    color: #e59848;
+    border:solid 1px #e59848;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 4px;
+
+    width: 140px;
+}
+
+.foto{
+    width: 140px;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.texto1{
+    font-family: "Playwrite PL", cursive;
+    font-size: 18px;
+
+}
+
+.texto2{
+    font-family: "Nunito", sans-serif;
+}
+
+.cardTexto{
+    font-family: "Nunito", sans-serif;
+
+    width: 130px;
+    /* overflow: hidden; */
+
+    word-break: break-all;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="pagina1" class="pagina1">
+
+        <img class="imagePagina1" src="img/logo.png" alt="">
+
+        <form id="form1" class="form1" action="#" onsubmit="event.preventDefault();">
+    
+            <div class="linha-input">
+                <label for="iptEmail" class="texto1">Email</label>
+                <input class="input" type="email" id="iptEmail" required autofocus>
+            </div>
+    
+            <div class="linha-input">
+                <label for="iptNome" class="texto1">Nome</label>
+                <input class="input" type="text" id="iptNome" required>
+            </div>
+    
+            <div class="linha-input">
+                <label for="iptSenha" class="texto1">Senha</label>
+                <input class="input" type="text" id="iptSenha" required>
+            </div>
+    
+    
+            <button id = 'btnAdicionar' class="btnadicionar"> Cadastrar </button>
+        </form>
+
+    </div>
+
+    <div id="pagina2" class="oculto">
+
+        <div class="nomeUsuario">
+            Olá, <span id="nomeUsuario"></span>
+            <p>Cadastre sua roupa</p>
+        </div>
+
+        <form id="form2" class="form2" action="#" onsubmit="event.preventDefault();">
+            
+            <div>
+                <label for="iptFoto" class="texto1">Foto</label>
+                <input class="iptFoto" type="file" id="iptFoto" accept="image/*" required>   
+            </div>
+    
+            <div class="linha-input">
+                <label for="iptInscricao" class="texto1">Descricao</label>
+                <input type="text" id="iptInscricao" required autofocus>
+            </div>
+    
+            <div class="linha-input">
+                <label for="iptValor" class="texto1">Valor</label>
+                <input type="number" id="iptValor" required>
+            </div>
+    
+            <button id = 'btnCadastrar'>Cadastrar</button>
+        </form>
+
+        <div id="container1" class="c1"></div>
+
+    </div>
+
+
+    <div id="containerTotal"></div>
+
+    <script src="classes.js"></script>
+    <script src="disigner.js"></script>
+    <script src="controlador.js"></script>
+    
+</body>
+</html>
